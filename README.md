@@ -75,3 +75,24 @@ swagger generate spec -m -o ./swagger.json
 //             properties:    
 //               name:    
 //                 type: string   
+
+
+# docker精髓
+进入docker查看，修改文件   
+sudo docker exec -it 775c7c9ee1e1 /bin/bash   
+
+dockerfile    
+
+FROM centos   
+
+MAINTAINER 648588267@qq.com   
+
+RUN mkdir /docker   
+RUN mkdir /docker/im_user   
+
+WORKDIR /docker/im_user   
+COPY /im_user /docker/im_user   
+
+ENTRYPOINT ["/docker/im_user/im_user"]    
+
+EXPOSE 8081   
