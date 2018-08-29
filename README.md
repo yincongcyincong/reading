@@ -81,7 +81,7 @@ swagger generate spec -m -o ./swagger.json
 进入docker查看，修改文件   
 sudo docker exec -it 775c7c9ee1e1 /bin/bash   
 
-dockerfile    
+dockerfile：：：    
 
 FROM centos   
 
@@ -96,3 +96,8 @@ COPY /im_user /docker/im_user
 ENTRYPOINT ["/docker/im_user/im_user"]    
 
 EXPOSE 8081   
+
+# docker
+注意
+
+run 只能run系统命令   
