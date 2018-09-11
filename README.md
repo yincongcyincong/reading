@@ -125,3 +125,6 @@ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='secret-key' --link se
 rooturl设置要注意    
 完成后，在浏览器中输入http://192.168.99.100:9000 即可访问。   Url
 完成后，在浏览器中输入http://192.168.99.100:9000 即可访问。   
+
+
+k8s部署：http://blog.51cto.com/2168836/2106963
