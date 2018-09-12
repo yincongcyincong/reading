@@ -128,3 +128,5 @@ rooturl设置要注意
 
 
 k8s部署：http://blog.51cto.com/2168836/2106963
+
+kubectl delete pods --all --grace-period=0 --force    
