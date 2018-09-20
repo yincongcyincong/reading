@@ -132,4 +132,8 @@ k8s部署：http://blog.51cto.com/2168836/2106963
 kubectl delete pods --all --grace-period=0 --force    
 
 kubectl  get pods --namespace kube-system  -o wide 查看pod的状态   
-kubectl describe -n kube-system  pod coredns-77cd44d8df-k9sh4 看pod报错
+kubectl describe -n kube-system  pod coredns-77cd44d8df-k9sh4 看pod报错    
+
+# 生成/etc/rhsm/ca/redhat-uep.pem文件
+wget http://mirror.centos.org/centos/7/os/x86_64/Packages/python-rhsm-certificates-1.19.10-1.el7_4.x86_64.rpm
+rpm2cpio python-rhsm-certificates-1.19.10-1.el7_4.x86_64.rpm | cpio -iv --to-stdout ./etc/rhsm/ca/redhat-uep.pem | tee /etc/rhsm/ca/redhat-uep.pem
