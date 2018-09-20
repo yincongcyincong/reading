@@ -130,3 +130,6 @@ rooturl设置要注意
 k8s部署：http://blog.51cto.com/2168836/2106963
 
 kubectl delete pods --all --grace-period=0 --force    
+
+kubectl  get pods --namespace kube-system  -o wide 查看pod的状态   
+kubectl describe -n kube-system  pod coredns-77cd44d8df-k9sh4 看pod报错
