@@ -127,8 +127,6 @@ rooturl设置要注意
 完成后，在浏览器中输入http://192.168.99.100:9000 即可访问。   
 
 
-k8s部署：http://blog.51cto.com/2168836/2106963
-
 kubectl delete pods --all --grace-period=0 --force    
 
 kubectl  get pods --namespace kube-system  -o wide 查看pod的状态   
@@ -140,3 +138,5 @@ rpm2cpio python-rhsm-certificates-1.19.10-1.el7_4.x86_64.rpm | cpio -iv --to-std
 
 获取所有的deployment   
 kubectl get deployments --all-namespaces    
+
+k8s介绍：https://blog.csdn.net/u011394397/article/details/54584819
