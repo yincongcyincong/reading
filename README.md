@@ -140,3 +140,5 @@ rpm2cpio python-rhsm-certificates-1.19.10-1.el7_4.x86_64.rpm | cpio -iv --to-std
 kubectl get deployments --all-namespaces    
 
 k8s介绍：https://blog.csdn.net/u011394397/article/details/54584819
+
+docker的sock找不到：systemctl restart proc-sys-fs-binfmt_misc.automount
