@@ -142,3 +142,7 @@ kubectl get deployments --all-namespaces
 k8s介绍：https://blog.csdn.net/u011394397/article/details/54584819
 
 docker的sock找不到：systemctl restart proc-sys-fs-binfmt_misc.automount
+
+
+
+export http_proxy= socks5://www:32e@114.114.114.114:1080
