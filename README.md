@@ -146,3 +146,21 @@ docker的sock找不到：systemctl restart proc-sys-fs-binfmt_misc.automount
 
 
 export http_proxy= socks5://www:32e@114.114.114.114:1080
+
+
+# sysbench 基准测试
+sysbench --db-driver=mysql --mysql-user=root --mysql-password=<pwd> \
+  --mysql-socket=<mysql.sock path> --mysql-db=foo --range_size=100 \
+  --table_size=10000 --tables=2 --threads=2 --events=0 --time=60 \
+  --rand-type=uniform /usr/share/sysbench/oltp_read_only.lua prepare（准备）    
+
+sysbench --db-driver=mysql --mysql-user=root --mysql-password=<pwd> \
+  --mysql-socket=<mysql.sock path> --mysql-db=foo --range_size=100 \
+  --table_size=10000 --tables=2 --threads=2 --events=0 --time=60 \
+  --rand-type=uniform /usr/share/sysbench/oltp_read_only.lua run（查询测试）    
+
+sysbench --db-driver=mysql --mysql-user=root --mysql-password=<pwd> \
+  --mysql-socket=<mysql.sock path> --mysql-db=foo --range_size=100 \
+  --table_size=10000 --tables=2 --threads=2 --events=0 --time=60 \
+  --rand-type=uniform /usr/share/sysbench/oltp_read_only.lua cleanup（清理）    
+
