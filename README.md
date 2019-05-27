@@ -164,3 +164,4 @@ sysbench --db-driver=mysql --mysql-user=root --mysql-password=<pwd> \
   --table_size=10000 --tables=2 --threads=2 --events=0 --time=60 \
   --rand-type=uniform /usr/share/sysbench/oltp_read_only.lua cleanup（清理）    
 
+top -H pid  losf -p进程
