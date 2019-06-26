@@ -10,4 +10,5 @@ luarocks install + 库名
 代码里面使用：   
 local redisCluster = require "resty.rediscluster"   
 
-修改kong的配置文件  /usr/local/share/lua/5.1/kong/template/
+修改kong的配置文件  /usr/local/share/lua/5.1/kong/template/    
+kong的upstream的健康检查/usr/local/share/lua/5.1/kong/dao/schemas/stream.lua
