@@ -82,4 +82,29 @@ func main() {
 ```
 这事main函数的写法，主要是使用选主功能   
 
-其他部分同sample-controller    
+其他部分同sample-controller   
+
+crd的yaml文件
+```
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: testtypes.example.apiserver.code-generator.k8s.io // 这里是下面的plural和注册文件register.go的groupname
+  namespace: yincong
+spec:
+  group: example.apiserver.code-generator.k8s.io
+  version: v1
+  names:
+    kind: TestType
+    plural: testtypes
+  scope: Namespaced
+```
+自定义的struct的结构体
+```
+kind: TestType
+metadata:
+  name: example-foo
+  namespace: yincong
+status:
+  Blah: tests
+```
