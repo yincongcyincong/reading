@@ -85,8 +85,11 @@ swagger generate spec -m -o ./swagger.json
 ```
 
 # docker精髓
+```
 进入docker查看，修改文件   
-sudo docker exec -it 775c7c9ee1e1 /bin/bash   
+sudo docker exec -it 775c7c9ee1e1 /bin/bash 
+docker run -d --restart=unless-stopped //使镜像docker启动后自启动
+```
 
 # dockerfile:    
 ```
