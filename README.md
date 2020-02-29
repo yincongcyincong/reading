@@ -166,3 +166,4 @@ lsof -p 进程
 ```
 ls *.pb.go | xargs -n1 -IX bash -c "sed -e '/bool/ s/,omitempty//' X > X.tmp && mv X{.tmp,}"
 ```
+du -h --max-depth=1查看文件夹大小
