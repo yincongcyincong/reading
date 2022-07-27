@@ -7,3 +7,5 @@ cd /Users/yincong/Library/Android/sdk/cmdline-tools/latest/bin & ./sdkmanager --
 
 ![image](https://user-images.githubusercontent.com/24344673/181236162-84630e91-4acb-421c-b199-d1ce9fef69ee.png)
 
+编译崩溃 “Installed Build Tools revision 32.0.0 is corrupted. Remove and install again using the SDK Manager.”
+cd /Users/yincong/Library/Android/sdk/build-tools/33.0.0 & cp d8 dx & cp d8.jar dx.jar
