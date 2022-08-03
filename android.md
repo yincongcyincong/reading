@@ -15,3 +15,6 @@ sdkmanager "system-images;android-28;default;x86"
 avdmanager create avd —n android28 —-package "system-images;android-28;default;x86"  (x86可能会有问题，可以安装amd64)   
 emulator @test1   
 
+### 遇到的问题
+（equires that an explicit value for android:exported be defined）    
+https://stackoverflow.com/questions/70333565/targeting-s-version-31-and-above-requires-that-an-explicit-value-for-android   
