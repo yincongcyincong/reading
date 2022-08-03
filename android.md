@@ -10,6 +10,7 @@ cd /Users/yincong/Library/Android/sdk/cmdline-tools/latest/bin & ./sdkmanager --
 编译崩溃 “Installed Build Tools revision 32.0.0 is corrupted. Remove and install again using the SDK Manager.”
 cd /Users/yincong/Library/Android/sdk/build-tools/33.0.0 & cp d8 dx & cp d8.jar dx.jar    
 
+### 自己安装镜像：
 sdkmanager "system-images;android-28;default;x86"   
 avdmanager create avd —n android28 —-package "system-images;android-28;default;x86"  (x86可能会有问题，可以安装amd64)   
 emulator @test1   
