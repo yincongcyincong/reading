@@ -7,6 +7,6 @@ sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
 sudo apt-get install unifont 中文依赖
 
 ### 安装plugin命令    
-./bin/grafana cli --pluginsDir="./data/plugin" plugins  install gapit-htmlgraphics-panel
+./bin/grafana cli --pluginsDir="./data/plugins" plugins  install gapit-htmlgraphics-panel
 
 ### 安装vm-plugin教程
