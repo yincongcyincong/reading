@@ -8,3 +8,10 @@ yarn dev
 yarn build    
 
 make victoriametrics-datasource-plugin-build
+
+### vl 插入数据curl
+
+### vl优化展示
+_time:5m | unpack_json from _msg
+_time:5m | unpack_logfmt from _msg
+
