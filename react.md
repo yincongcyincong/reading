@@ -5,3 +5,6 @@
 ### 单测
 安装jest，官网有    
 yarn test ./src/datasource.test.ts     
+
+### webstorm 进行调试模式
+1. tsconfig.conf 里面增加配置 "sourceMap": true
