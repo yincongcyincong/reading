@@ -15,3 +15,12 @@ sudo apt-get install unifont 中文依赖
 ### 完成远程调用编译
 在build.go -> cmd.go 中，把 `ldflags`函数中，-w参数去除    
 ~/go/bin/dlv --listen=:8200 --headless=true --api-version=2 --accept-multiclient  exec ./bin/darwin-arm64/grafana -- server    
+
+### 编译
+后端：
+make gen-go    
+make build-backend    
+
+前端：
+yarn install    
+yarn build    
