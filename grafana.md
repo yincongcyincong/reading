@@ -10,3 +10,7 @@ sudo apt-get install unifont 中文依赖
 ./bin/grafana cli --pluginsDir="./data/plugins" plugins  install gapit-htmlgraphics-panel
 
 ### 安装vm-plugin教程
+
+
+### 完成远程调用编译
+在build.go -> cmd.go 中，把 `ldflags`函数中，-w参数去除
