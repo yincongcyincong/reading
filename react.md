@@ -8,3 +8,8 @@ yarn test ./src/datasource.test.ts
 
 ### webstorm 进行调试模式
 1. tsconfig.conf 里面增加配置 "sourceMap": true
+
+### lint
+yarn run prettier:check
+yarn run lint
+yarn run typecheck
