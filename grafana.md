@@ -24,3 +24,7 @@ make build-backend
 前端：
 yarn install    
 yarn build    
+
+
+### 清理cache
+yarn cache clean
