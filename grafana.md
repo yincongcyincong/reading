@@ -25,6 +25,12 @@ make build-backend
 yarn install    
 yarn build    
 
+### inpect组件
+PanelEditor（activateInActiveParents）-》激活plugin    
+PanelInspectDrawer显示inspect    
+DashboardSceneUrlSync 组件panelRef注册    
+util.ts 获取组件    
+
 
 ### 清理cache
 yarn cache clean
