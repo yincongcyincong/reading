@@ -10,6 +10,7 @@ yarn test ./src/datasource.test.ts
 1. tsconfig.conf 里面增加配置 "sourceMap": true
 
 ### lint
-yarn run prettier:check    
+yarn run prettier:check   
+yarn run prettier --write public/app/features/logs/utils.ts    
 yarn run lint    
 yarn run typecheck    
