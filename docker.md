@@ -6,6 +6,6 @@ docker run -d -p 48080:7081 -v /mnt/im_web/log/:/mnt/log/ im_web_2.0:lastest /mn
 # docker启动nginx
 docker pull nginx:1.25    
 docker run -d --restart=always --network=host --name nginx -p 80:80 nginx:1.25    
-apt-get update 更新依赖
-apt-get install xxx 安装
-使用机器ip，一般是172开头
+apt-get update 更新依赖    
+apt-get install xxx 安装    
+使用机器ip，一般是172开头    
