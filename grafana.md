@@ -34,3 +34,7 @@ util.ts 获取组件
 
 ### 清理cache
 yarn cache clean
+
+### 前端router
+public/app/routes/toutes.tsx    
+
