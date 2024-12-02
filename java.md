@@ -6,3 +6,5 @@
 * 使用：java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8200 -jar lib/lingjing-plugin-market-api-app.jar 进行调试模式启动
 
 2. java在使用> 或者 <, 必须判断是否为null
+
+3. starlight 远程调用，更新版本，更新maven，有无本地更新版本？？？？
