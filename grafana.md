@@ -38,3 +38,8 @@ yarn cache clean
 ### 前端router
 public/app/routes/toutes.tsx    
 
+### 依赖
+export $GRAFANA_PATH=/Users/yincong/go/src/github.com/yincongcyincong/grafana    
+使用 script/dev.sh     
+然后 使用yarn start， yarn start才会打测试的包，能出来页面，暂时不知道原因    
+
