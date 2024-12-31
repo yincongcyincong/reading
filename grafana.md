@@ -43,3 +43,8 @@ export $GRAFANA_PATH=/Users/yincong/go/src/github.com/yincongcyincong/grafana
 使用 script/dev.sh     
 然后 使用yarn start， yarn start才会打测试的包，能出来页面，使用的命令不一样！
 
+### 报警
+evaluation：计算频率
+contact points: 可以选template
+notification policy: 可以选template
+
