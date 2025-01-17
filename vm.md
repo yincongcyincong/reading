@@ -15,3 +15,8 @@ make victoriametrics-datasource-plugin-build
 _time:5m | unpack_json from _msg
 _time:5m | unpack_logfmt from _msg
 
+### 前端报错
+1.  Cannot find module 'react-scripts/package.json'    
+  使用 npm i react-scripts    
+ 
+
