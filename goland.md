@@ -8,5 +8,6 @@
    1. 进入src目录有all.sh（执行编译和单测）和make.sh（执行编译），但是编译需要有./bin/go的二进制，执行完成之后才会在goland里面展示这个源的go版本
    2. 执行完成编译之后可以在idea里面选择自己编译的路径就能用自己新编译的go
    3. 提代码直接提github，会同步到gerrit
+   4. debugger有问题的时候先更新dlv
 
-kaishi
+
