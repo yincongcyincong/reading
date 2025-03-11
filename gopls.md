@@ -1,5 +1,5 @@
 ### 后台执行
-./gopls serve -listen :8080
+~/go/bin/dlv --listen=:8200 --headless=true --api-version=2 --accept-multiclient exec  ./gopls serve -listen :8080
 
 ### vscdoe 交互配置
 ```
